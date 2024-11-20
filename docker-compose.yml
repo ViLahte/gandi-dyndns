@@ -2,7 +2,6 @@ services:
   gandi-dyndns:
     build:
       context: .
-      dockerfile: Dockerfile
     volumes:
       - ./crontab.txt:/etc/crontabs/root
       - ./logs:/var/log
